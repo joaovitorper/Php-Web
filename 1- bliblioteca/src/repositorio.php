@@ -31,5 +31,5 @@ function guardar_livros(array $livros): void
 
 function e(string $texto): string
 {
-    return htmlspecialchars($texto, ENT_QUOTES, 'UTF-8');
+ return htmlspecialchars($texto, ENT_QUOTES, 'UTF-8');
 }
