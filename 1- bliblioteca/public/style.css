@@ -1,3 +1,4 @@
+/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -5,27 +6,33 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* BODY CENTRALIZADO */
 body {
   background-color: #f4f6f8;
-  padding: 30px;
+  padding: 40px 20px;
   color: #2c3e50;
+
+  display: flex;
+  justify-content: center;
 }
 
+/* CONTAINER */
 .container {
+  width: 100%;
   max-width: 950px;
-  margin: auto;
-  background: #ffffff;
-  padding: 25px;
-  border-radius: 12px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  background: #fff;
+  padding: 30px;
+  border-radius: 14px;
+  border: 1px solid #e6ecf2;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
 }
 
+/* HEADER */
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 12px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 h1 {
@@ -35,42 +42,52 @@ h1 {
 /* BOTÕES */
 .btn {
   display: inline-block;
-  padding: 10px 14px;
+  padding: 10px 16px;
   border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
-  border: none;
+  border: 1px solid transparent;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 
 .btn-primary {
   background: #2d6cdf;
-  color: #ffffff;
+  color: #fff;
+  border-color: #2d6cdf;
 }
 
 .btn-primary:hover {
   background: #2459b8;
 }
 
-/* CARDS */
+.btn-secondary {
+  background: #f1f1f1;
+  color: #333;
+  border-color: #ddd;
+}
+
+.btn-secondary:hover {
+  background: #e0e0e0;
+}
+
+/* CARD */
 .card {
   background: #f9fbff;
   border: 1px solid #e6eefc;
   border-radius: 12px;
   padding: 16px;
-  margin: 14px 0;
+  margin: 18px 0;
 }
 
-/* FORMULÁRIOS */
+/* FORM */
 label {
   display: block;
   font-weight: bold;
   margin: 10px 0 6px;
 }
 
-input,
-select {
+input, select {
   width: 100%;
   padding: 10px;
   border-radius: 8px;
@@ -98,48 +115,65 @@ select {
 table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 12px;
+  margin-top: 16px;
   border-radius: 12px;
   overflow: hidden;
+  border: 1px solid #e6ecf2;
 }
 
+/* CABEÇALHO */
 th {
   text-align: left;
-  font-size: 13px;
-  letter-spacing: 0.3px;
+  font-size: 12px;
+  letter-spacing: 0.5px;
   text-transform: uppercase;
-  background: #ecf2ff;
+  background: #f1f5ff;
   color: #2d6cdf;
-  padding: 12px;
+  padding: 14px;
+  border-bottom: 2px solid #dbe6ff;
 }
 
+/* CÉLULAS */
 td {
-  padding: 12px;
+  padding: 14px;
   border-bottom: 1px solid #eef2f5;
   font-size: 14px;
 }
 
+/* LINHAS */
+tr {
+  transition: 0.2s;
+}
+
 tr:hover td {
-  background: #fafcff;
+  background: #f8fbff;
 }
 
 /* BADGES */
 .badge {
   display: inline-block;
-  padding: 6px 10px;
+  padding: 6px 12px;
   border-radius: 999px;
   font-size: 12px;
   font-weight: bold;
 }
 
 .badge-ano {
-  background: #e8f5e9;
+  background: #e6f4ea;
   color: #2e7d32;
+}
+
+/* BOTÕES NA TABELA */
+td .btn {
+  padding: 6px 10px;
+  font-size: 12px;
+  margin-right: 6px;
 }
 
 /* RODAPÉ */
 .footer {
-  margin-top: 18px;
+  margin-top: 20px;
   font-size: 12px;
   color: #78909c;
+  text-align: center;
 }
