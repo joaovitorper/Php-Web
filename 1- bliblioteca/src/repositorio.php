@@ -1,4 +1,5 @@
 <?php
+
 function caminho_json(): string
 {
     return __DIR__ . '/../data/livros.json';
@@ -27,7 +28,8 @@ function guardar_livros(array $livros): void
         json_encode($livros, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE)
     );
 }
+
 function e(string $texto): string
 {
-    return htmlspecialchars($texto, ENT_QUOTES, 'UFT-8');
+    return htmlspecialchars($texto, ENT_QUOTES, 'UTF-8');
 }

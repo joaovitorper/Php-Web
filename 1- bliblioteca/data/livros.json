@@ -1,3 +1,16 @@
-{
-    
-}
+[
+  {
+    "id": "l2",
+    "titulo": "O Pequeno Príncipe",
+    "autor": "Antoine de Saint-Exupéry",
+    "isbn": "9780156012195",
+    "ano": "1943"
+  },
+  {
+    "id": "69f2055355b61",
+    "titulo": "Dom Casmurro",
+    "autor": "Machado de Assis",
+    "isbn": "978-85-235-0000-222",
+    "ano": "1899"
+  }
+]
